@@ -83,6 +83,11 @@ Other items to try
 * Maybe the command of `vmware-view` is not the correct binary to start on?
 * Ask a question at the [Horizon community](https://communities.vmware.com/community/vmtn/horizon/content?filterID=contentstatus%5Bpublished%5D%7Eobjecttype%7Eobjecttype%5Bthread%5D)
 
+Enhancements
+---
+
+* Need to get `--scale` working, as the current rendering via `--nxagent` is too small for my UHD screen
+
 License
 ---
 
