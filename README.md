@@ -78,6 +78,7 @@ Using log file /tmp/vmware-<username>/vmware-horizon-client-120.log
 Other items to try
 ---
 
+* Can the dependencies checker in the bundle be run in the Dockerfile?
 * The x11docker project with the `--xephyr` display driver
 * Do more reading of the Linux client docs, there may be clues in there
 * Maybe the command of `vmware-view` is not the correct binary to start on?
