@@ -28,5 +28,8 @@ RUN ./VMware-Horizon-Client-4.10.0-11053294.x64.bundle \
     --set-setting vmware-horizon-media-provider mediaproviderEnable no \
     --set-setting vmware-horizon-virtual-printing tpEnable no 
 
-CMD ["/bin/bash"]
+# This file only is a problem if x11docker is started with --xpra
+RUN mkdir -p /etc/vmware/udpProxy && touch /etc/vmware/udpProxy/config
+
+CMD ["vmware-view"]
 
