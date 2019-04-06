@@ -79,7 +79,9 @@ Other items to try
 ---
 
 * The x11docker project with the `--xephyr` display driver
+* Do more reading of the Linux client docs, there may be clues in there
 * Maybe the command of `vmware-view` is not the correct binary to start on?
+* Ask a question at the [Horizon community](https://communities.vmware.com/community/vmtn/horizon/content?filterID=contentstatus%5Bpublished%5D%7Eobjecttype%7Eobjecttype%5Bthread%5D)
 
 License
 ---
