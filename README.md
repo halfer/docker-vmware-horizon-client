@@ -55,11 +55,31 @@ It may be possible to add a server using args to the binary, rather than through
 odd that the placeholder text 'Add Server' gets treated as a URL - I wonder if this Linux client does not
 get as much polish as its Windows counterpart.
 
+Pre-configuring a server
+---
+
+I have tried changing the image using this:
+
+    CMD ["vmware-view", "-s", "horizon.server.example.org"]
+
+This requires a Docker build and client re-launch. That results in the server appearing in the client list,
+but when I double-click on it, I get this crash:
+
+```
+xargs: strings: No such file or directory
+Using log file /tmp/vmware-<username>/vmware-horizon-client-120.log
+2019-04-06 18:13:43.688+01:00: vmware-view 120| access fail
+2019-04-06 18:13:43.723+01:00: vmware-view 120| Failed to get UDPProxy_RunInBackground symbol, exiting.
+2019-04-06 18:13:43.723+01:00: vmware-view 120| UdpProxyImpl_LoadDynamicLibrary failed for libudpProxyLib.so
+2019-04-06 18:13:43.723+01:00: vmware-view 120| Failed to create a UDP proxy instance
+/usr/bin/vmware-view: line 142:   120 Segmentation fault      (core dumped) "$binPath/bin/$binFile" "$@"
+```
+
 Other items to try
 ---
 
 * The x11docker project with the `--xephyr` display driver
-* Add a server using a parameter
+* Maybe the command of `vmware-view` is not the correct binary to start on?
 
 License
 ---
